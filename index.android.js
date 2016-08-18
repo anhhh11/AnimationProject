@@ -19,6 +19,7 @@ class AnimationProject extends Component {
       <View style={styles.container}>
         <View style={styles.box}>
           <Text style={styles.textInBox11}>
+            Flex -
             Welcome to
           </Text>
           <Text style={styles.textInBox12}>
@@ -27,6 +28,7 @@ class AnimationProject extends Component {
         </View>
         <View style={styles.box1}>
           <Text style={styles.textInBox21}>
+            Flex -
             Haha!
           </Text>
           <Text style={styles.textInBox22}>
@@ -34,6 +36,15 @@ class AnimationProject extends Component {
           </Text>
           <Text style={styles.textInBox23}>
             Hehe!
+          </Text>
+        </View>
+        <View style={styles.box3}>
+          <Text style={styles.textInBox31}>
+            Flex -
+            Haha!
+          </Text>
+          <Text style={styles.textInBox32}>
+            Hoho
           </Text>
         </View>
       </View>
@@ -119,6 +130,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     alignSelf: "flex-end"
   },
+  box3: {
+    padding: 10,
+    flex: 1,
+    borderWidth: 3
+  },
+  textInBox31: {
+    position: "relative",
+    left: 30,
+  }
 });
 
 AppRegistry.registerComponent('AnimationProject', () => AnimationProject);
