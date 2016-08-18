@@ -137,7 +137,14 @@ const styles = StyleSheet.create({
   },
   textInBox31: {
     position: "relative",
-    left: 30,
+    left: 10,
+    top: 20,
+    zIndex: 2,
+    backgroundColor: "rgba(0,0,255,0.5)"
+  },
+  textInBox32: {
+    backgroundColor: "rgba(255,0,0,0.5)",
+    zIndex: 9
   }
 });
 
