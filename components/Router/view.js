@@ -15,8 +15,8 @@ const RouterView = React.createClass({
     return <Provider store={store}>
       <RouterWithRedux>
         <Scene key="root">
-          <Scene key="main" component={MainView} title="Main" initial={true}/>
-          <Scene key="info" component={InfoView} title="Info"/>
+          <Scene key="main" component={MainView} title="Main" initial={true} type="replace"/>
+          <Scene key="info" component={InfoView} title="Info" type="replace"/>
         </Scene>
       </RouterWithRedux>
     </Provider>

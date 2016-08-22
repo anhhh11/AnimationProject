@@ -4,6 +4,8 @@ import {
   StyleSheet,
   TouchableOpacity
 } from 'react-native';
+const Realm = require('realm');
+
 import React from 'react';
 import {connect} from 'react-redux';
 import {Actions} from 'react-native-router-flux'
@@ -12,11 +14,10 @@ import {Actions} from 'react-native-router-flux'
 export const MainView = React.createClass({
   render(){
     const {routes} = this.props;
-    console.log('RTS', routes.toJS());
     return <View style={styles.container}>
       <View style={styles.box}>
         <TouchableOpacity onPress={Actions.info}>
-        <Text style={styles.text}>{routes.getIn(['scene', 'title'])}</Text>
+          <Text style={styles.text}>{routes.getIn(['scene', 'title'])}</Text>
         </TouchableOpacity>
       </View>
     </View>
